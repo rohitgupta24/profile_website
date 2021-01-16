@@ -80,9 +80,9 @@
     "lint": "eslint --ext .js,.jsx --config .eslintrc.js",
     "dev": "gatsby develop",
     "clean": "rm -rf .cache && rm -rf public",
-    "build": "gatsby build",
+    "build": "CI= react-scripts build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b dev"
   },
   "browserslist": [
     "> 10%",
