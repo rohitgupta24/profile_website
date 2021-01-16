@@ -9,7 +9,7 @@ const siteMetadata = {
 
 module.exports = {
   siteMetadata,
-  pathPrefix: '/',
+  pathPrefix: '/profile_website',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
