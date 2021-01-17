@@ -80,9 +80,10 @@
     "lint": "eslint --ext .js,.jsx --config .eslintrc.js",
     "dev": "gatsby develop",
     "clean": "rm -rf .cache && rm -rf public",
-    "build": "CI= react-scripts build",
+    "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b dev"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "browserslist": [
     "> 10%",
